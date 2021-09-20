@@ -1,0 +1,108 @@
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 1 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem1" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 2 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem2" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 3 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem3" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 4 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem4" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 5 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem5" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 6 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem6" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 7 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem7" />
+  </div>
+</div>
+<!-- semester end -->
+<!-- semester -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label">Enter 8 sem SGPA :</label>
+  </div>
+  <div class="col-auto">
+    <input type="number" class="form-control" [(ngModel)]="sem8" />
+  </div>
+</div>
+<!-- semester end -->
+<div *ngIf="flag" class="alert alert-danger" role="alert">
+  <p class="align-text-center">
+    SGPA should not be greater than 0 and less than 10
+  </p>
+</div>
+<hr />
+<div class="row g-3 align-items-center">
+  <button
+    type="button"
+    class="btn btn-primary btn-lg align-items-center"
+    (click)="Calculate()"
+  >
+    Calculate
+  </button>
+</div>
+<hr />
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label"><h1>CGPA</h1></label>
+  </div>
+  <div class="col-auto">
+    <input
+      type="number"
+      class="form-control form-control-lg"
+      value="{{ sum }}"
+      disabled
+    />
+  </div>
+</div>

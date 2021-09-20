@@ -1,0 +1,10 @@
+a {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.center {
+  margin: auto;
+  width: 50%;
+
+  padding: 10px;
+}
