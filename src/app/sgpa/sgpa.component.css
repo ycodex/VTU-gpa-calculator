@@ -1,9 +1,7 @@
-.col-auto {
-  margin: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
+li {
+  width: max-content;
 }
-.center {
-  display: inline-flex;
-  justify-content: center;
+.col-auto {
+  width: 50%;
+  margin-bottom: 0.6%;
 }

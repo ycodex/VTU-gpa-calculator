@@ -1,13 +1,51 @@
-<div class="btn-group">
+<select
+  class="form-select form-select-lg mb-3"
+  aria-label=".form-select-lg example"
+  (change)="handleChange($event.target)"
+  name="cmbTipoTexto"
+>
+  <option *ngFor="let item of textTypes" [value]="item.key">
+    {{ item.value }}
+  </option>
+</select>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Marks</th>
+      <th scope="col">Credit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sub of selectedSem">
+      <th scope="row">{{ sub.code }}</th>
+      <td>{{ sub.subject }}</td>
+      <td><input value="{{ sub.marks }}" /></td>
+      <td>{{ sub.credit }}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="row g-3 align-items-center">
   <button
-    class="btn btn-secondary btn-lg dropdown-toggle"
     type="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
+    class="btn btn-primary btn-lg align-items-center"
+    (click)="calculate()"
   >
-    Large button
+    Calculate
   </button>
-  <ul class="dropdown-menu">
-    ...
-  </ul>
+</div>
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label class="col-form-label"><h1>SGPA</h1></label>
+  </div>
+  <div class="col-auto">
+    <input
+      type="number"
+      class="form-control form-control-lg"
+      value="{{ sgpa }}"
+      disabled
+    />
+  </div>
 </div>
