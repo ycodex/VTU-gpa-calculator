@@ -19,10 +19,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let sub of selectedSem">
+    <tr *ngFor="let sub of selectedSem; let i = index">
       <th scope="row">{{ sub.code }}</th>
       <td>{{ sub.subject }}</td>
-      <td><input value="{{ sub.marks }}" /></td>
+      <td>
+        <input value="{{ sub.marks }}" [(ngModel)]="marks[i]" />
+      </td>
       <td>{{ sub.credit }}</td>
     </tr>
   </tbody>

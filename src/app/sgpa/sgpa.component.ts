@@ -8,6 +8,7 @@ import { observable } from 'rxjs';
 })
 export class SgpaComponent implements OnInit {
   constructor() {}
+  marks: any = new Array(10);
   selectedSem: any;
   ngOnInit(): void {}
   selectedObject: any;
@@ -40,17 +41,24 @@ export class SgpaComponent implements OnInit {
   creditSum: number = 0;
   obtainedCredits: number = 0;
   sgpa: number = 0;
+  index: number = 0;
   calculate() {
+    this.creditSum = 0;
+    // this.obtainedCredits = 0;
     for (let i of this.selectedSem) {
-      console.log(i.marks);
       this.creditSum += i.credit;
-      this.obtainedCredits += this.getPoints(i.marks);
+      this.obtainedCredits += i.credit * this.getPoints(this.marks[this.index]);
+      this.index++;
     }
+
+    console.log(this.marks);
+    console.log(this.obtainedCredits);
+    console.log(this.creditSum);
     this.sgpa = this.obtainedCredits / this.creditSum;
   }
 
   handleChange(index: any) {
-    console.log(this.textTypes[index.selectedIndex]);
+    // console.log(this.textTypes[index.selectedIndex]);
     this.selectedObject = this.textTypes[index.selectedIndex];
     if (this.selectedObject.key == '1') {
       this.selectedSem = this.firstSem;
