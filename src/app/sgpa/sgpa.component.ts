@@ -68,6 +68,16 @@ export class SgpaComponent implements OnInit {
       this.selectedSem = this.thirdSem;
     } else if (this.selectedObject.key == '4') {
       this.selectedSem = this.fourthSem;
+    } else if (this.selectedObject.key == '5') {
+      this.selectedSem = this.fifthSem;
+    } else if (this.selectedObject.key == '6') {
+      this.selectedSem = this.sixthSem;
+    } else if (this.selectedObject.key == '7') {
+      this.selectedSem = this.seventhSem;
+    } else if (this.selectedObject.key == '8') {
+      this.selectedSem = this.eighthSem;
+    } else {
+      this.selectedSem = null;
     }
   }
   firstSem = [
@@ -266,6 +276,194 @@ export class SgpaComponent implements OnInit {
     {
       code: '17CPJ49',
       subject: ' Const. of India',
+      marks: '',
+      credit: 1,
+    },
+  ];
+  fifthSem = [
+    {
+      code: '17CS51',
+      subject: 'MGMT. and Entrepreneurship',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS52',
+      subject: 'Computer Networks',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS553',
+      subject: 'Advanced Java and J2EE',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS53',
+      subject: 'Database Management System',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS54',
+      subject: '.NET framework',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS54',
+      subject: 'Automata Theory',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CSL57',
+      subject: 'Computer Network Lab',
+      marks: '',
+      credit: 2,
+    },
+    {
+      code: '17CSL58',
+      subject: 'DBMS laboratory',
+      marks: '',
+      credit: 2,
+    },
+  ];
+  sixthSem = [
+    {
+      code: '17CS651',
+      subject: 'Data Mining and Warehousing',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS61',
+      subject: 'CryptoGraphy and Cyber law',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS62',
+      subject: 'Computer Graphics and visulization',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS63',
+      subject: 'System Software and compiler Design',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS664',
+      subject: 'Python application Programming',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS64',
+      subject: 'Operating Systems',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CSL67',
+      subject: 'System Software Lab',
+      marks: '',
+      credit: 2,
+    },
+    {
+      code: '17CSL68',
+      subject: 'Computer Graphics lab',
+      marks: '',
+      credit: 2,
+    },
+  ];
+  seventhSem = [
+    {
+      code: '17CS71',
+      subject: 'Web technology',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS742',
+      subject: 'Cloud computing',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS72',
+      subject: 'Advanced computer architecture',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS753',
+      subject: 'Digital Image Processing',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS73',
+      subject: 'Machine Learning',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CSL76',
+      subject: 'Machine learning Lab',
+      marks: '',
+      credit: 2,
+    },
+    {
+      code: '17CSL77',
+      subject: 'Web Technology Lab',
+      marks: '',
+      credit: 2,
+    },
+    {
+      code: '17CSP78',
+      subject: 'Project work Phase I',
+      marks: '',
+      credit: 2,
+    },
+  ];
+  eighthSem = [
+    {
+      code: '17CS81',
+      subject: 'Internet Of things',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS832',
+      subject: 'User Interface Design',
+      marks: '',
+      credit: 3,
+    },
+    {
+      code: '17CS82',
+      subject: 'Big data Analytics',
+      marks: '',
+      credit: 4,
+    },
+    {
+      code: '17CS84',
+      subject: 'Internship/Professional Practice',
+      marks: '',
+      credit: 2,
+    },
+    {
+      code: '17CSP85',
+      subject: 'Project work Phase II',
+      marks: '',
+      credit: 6,
+    },
+    {
+      code: '17CSS86',
+      subject: 'Seminar',
       marks: '',
       credit: 1,
     },
