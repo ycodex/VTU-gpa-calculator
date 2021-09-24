@@ -25,7 +25,11 @@ export class SgpaComponent implements OnInit {
   ];
 
   getPoints(marks: number): number {
-    if (marks >= 50 && marks <= 59) {
+    if (marks >= 35 && marks <= 39) {
+      return 4;
+    } else if (marks >= 40 && marks <= 49) {
+      return 5;
+    } else if (marks >= 50 && marks <= 59) {
       return 6;
     } else if (marks >= 60 && marks <= 69) {
       return 7;
@@ -35,6 +39,8 @@ export class SgpaComponent implements OnInit {
       return 9;
     } else if (marks >= 90 && marks <= 100) {
       return 10;
+    } else if (marks > 100) {
+      return this.getPoints((marks * 100) / 200);
     }
     return 0;
   }
@@ -59,6 +65,7 @@ export class SgpaComponent implements OnInit {
 
   handleChange(index: any) {
     // console.log(this.textTypes[index.selectedIndex]);
+    this.marks = [];
     this.selectedObject = this.textTypes[index.selectedIndex];
     if (this.selectedObject.key == '1') {
       this.selectedSem = this.firstSem;
