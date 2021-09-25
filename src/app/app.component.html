@@ -2,8 +2,15 @@
 <div class="container">
   <div class="nav justify-content-center">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand">VTU GPA CALCULATOR </a>
+      <a class="navbar-brand"
+        ><img
+          src="https://fontmeme.com/permalink/210924/c7f170887e72348eab7952711d9e0468.png"
+          alt="graffiti-creator"
+          border="0"
+        />
+      </a>
     </nav>
+    <p>Open in desktop for better experience</p>
   </div>
 </div>
 
@@ -14,14 +21,25 @@
   <hr />
   <div class="jumbotron">
     <nav class="navbar navbar-light bg-light test">
-      <div class="container-fluid justify-content-center test">
-        <a class="navbar-brand" routerLink="/sgpa" routerLinkActive="active"
-          >SGPA</a
-        >
-
-        <a class="navbar-brand" routerLink="/cgpa" routerLinkActive="active"
-          >CGPA</a
-        >
+      <div class="container-fluid justify-content-center">
+        <div class="row">
+          <div class="col">
+            <a
+              class="navbar-brand button"
+              routerLink="/cgpa"
+              routerLinkActive="active"
+              >CGPA</a
+            >
+          </div>
+          <div class="col">
+            <a
+              class="navbar-brand button"
+              routerLink="/sgpa"
+              routerLinkActive="active"
+              >SGPA</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
     <hr />

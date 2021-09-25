@@ -5,7 +5,7 @@ import { SgpaComponent } from './sgpa/sgpa.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/',
+    redirectTo: '/cgpa',
     pathMatch: 'full',
   },
   {

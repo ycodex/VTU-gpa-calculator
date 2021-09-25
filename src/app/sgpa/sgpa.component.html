@@ -1,6 +1,28 @@
 <select
   class="form-select form-select-lg mb-3"
   aria-label=".form-select-lg example"
+  name="cmbTipoTexto"
+  disabled
+>
+  <option selected disabled>
+    Select Branch (coming soon , currently supported Computer science)
+  </option>
+</select>
+<select
+  class="form-select form-select-lg mb-3"
+  aria-label=".form-select-lg example"
+  name="cmbTipoTexto"
+  aria-placeholder="Select Scheme(Coming soon)"
+  disabled
+>
+  <option selected disabled>
+    Select scheme (coming soon, currently supported only for 2017)
+  </option>
+</select>
+
+<select
+  class="form-select form-select-lg mb-3"
+  aria-label=".form-select-lg example"
   (change)="handleChange($event.target)"
   name="cmbTipoTexto"
 >
@@ -18,6 +40,14 @@
       <th scope="col">Credit</th>
     </tr>
   </thead>
+  <tbody *ngIf="selectedSem == null">
+    <tr>
+      <th scope="row">Display code</th>
+      <td>Display subject</td>
+      <td>Input marks</td>
+      <td>Display credit</td>
+    </tr>
+  </tbody>
   <tbody>
     <tr *ngFor="let sub of selectedSem; let i = index">
       <th scope="row">{{ sub.code }}</th>

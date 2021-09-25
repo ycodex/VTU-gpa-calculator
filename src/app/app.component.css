@@ -8,3 +8,8 @@ a {
 
   padding: 10px;
 }
+
+.form-control {
+  box-shadow: 10px 10px;
+  background-color: gray !important;
+}
